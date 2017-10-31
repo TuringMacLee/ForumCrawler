@@ -2,9 +2,9 @@ import sys
 from scrapy import cmdline
 sys.path.append('ForumCrawler/custom')
 
-if len(sys.argv) == 0:
+if len(sys.argv) == 1:
     print 'You should assign a spider'
-elif len(sys.argv) > 1:
+elif len(sys.argv) > 2:
     print 'Only support one spider at a time'
 else:
     spider = sys.argv[1]
